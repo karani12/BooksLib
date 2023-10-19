@@ -3,26 +3,25 @@
 ### How to run
 
 
-```php
+```bash
 composer install
 ```
 
-```js
+```bash
 pnpm install
 
 ```
 
-```
+```bash
 php artisan:seed
 
 ```
 
-```
+```bash
 php artisan serve
 
 ```
 
-```
+```bash
 npm run dev
-
 ```

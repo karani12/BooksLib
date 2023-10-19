@@ -60,6 +60,10 @@
 
 
     <div class="overflow-x-auto px-40 m-auto">
+        <div v-if="books.length === 0">
+            No books 
+        </div>
+       
         <table class="table">
             <thead>
                 <tr>
