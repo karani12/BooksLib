@@ -13,7 +13,7 @@ export default function useTags() {
     onMounted(tagsStore.loadTags)
 
     watchEffect(() => {
-        tags.value = tagsStore.books
+        tags.value = tagsStore.tags
         loading.value = tagsStore.loading
         error.value = tagsStore.error
     })
@@ -23,6 +23,5 @@ export default function useTags() {
         loading,
         error,
     }
-
     
 }

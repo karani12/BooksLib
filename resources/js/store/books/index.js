@@ -18,7 +18,6 @@ export const useBooksStore = defineStore("books", () => {
             });
             console.log(response.data);
             books.value = response.data;
-            console.log(books.value);
         } catch (err) {
             error.value = err;
         } finally {

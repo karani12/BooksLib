@@ -21,16 +21,16 @@ class BooksController extends Controller
     public function store(Request $request)
     {
         $book = Book::create([
-            'title' => $request->title,
-            'author_id' => $request->author_id,
-            'publication_year' => $request->publication_year,
+            'title' => $request->input('title'),
+            'author_id' => $request->input('author_id'),
+            'publication_year' => $request->input('publication_year'),
         ]);
-        $book->tags()->attach($request->tag_id);
-        return response()->json($book);
-
+        $book->tags()->attach($request->input('tag_id'));
+        $book->load('author', 'tags');
+        return response()->json($book, 200);
     }
+    
 
-    // get all tags and associated books based on tag_id
 
     public function getTags()
     {
