@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   // set mode to class
+  daisyui: {
+    themes: ["light"]
+  },
   darkMode:"class",
   content: [
     "./resources/**/*.blade.php",

@@ -11,7 +11,7 @@
                     <div class="input-cont">
                         <label for="title" class="mt-3">Title</label>
                         <input type="text" placeholder="" name="title" v-model="item.title"
-                            class="w-full mt-3 border-white border rounded-md h-10 bg-transparent px-3" />
+                            class="w-full mt-3  border rounded-md h-10 bg-transparent px-3" />
                     </div>
                     <div class="input-cont mt-3">
                         <div class="form-control ">
@@ -41,12 +41,12 @@
                         <label for="publication_year" class="mt-3">Publication year</label>
                         <input type="number" v-model="item.publication_year" maxlength="4" required placeholder=""
                             name="publication-year"
-                            class="w-full mt-3 border-white border rounded-md h-10 bg-transparent px-3" />
+                            class="w-full mt-3  border rounded-md h-10 bg-transparent px-3" />
                     </div>
 
                     <div class="cont-btns flex gap-4 mt-3">
 
-                        <button type="submit" className="btn btn-primary">Add Book</button>
+                        <button  className="btn btn-primary">Add Book</button>
                         <form method="dialog">
                             <button className="btn btn-outline">Close</button>
                         </form>
